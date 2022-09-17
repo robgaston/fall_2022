@@ -1,5 +1,10 @@
 {
     "container": "map",
-    "accessToken": "",
-    "style": "mapbox://styles/mapbox/streets-v11"
+    "accessToken": "pk.eyJ1Ijoicmdhc3RvbiIsImEiOiJJYTdoRWNJIn0.MN6DrT07IEKXadCU8xpUMg",
+    "style": "mapbox://styles/rgaston/cl868zh0l000914s1f3gc039d",
+    "center": [
+        -118.217324,
+        33.949514
+    ],
+    "zoom": 9.5
 }
