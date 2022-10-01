@@ -6,8 +6,32 @@
     </head>
     <body>
         <main>
+            <header>
+                <div>
+                    Cataloged Historic Sites in Los Angeles by Neighborhood
+                </div>
+                <div>
+                    Rob Gaston, October 2022
+                </div>
+            </header>
             <div id="map"></div>
+            <div id="popup">
+                <h4 class="neighborhood-name"></h4>
+                <div>
+                    <span class="count"></span> historic site(s) cataloged
+                </div>
+            </div>
+            <div id="legend">
+                <h4># of Sites</h4>
+            </div>
         </main>
+
+        <template id="legend-entry">
+            <div class="entry">
+                <span class="color"></span>
+                <span class="value"></span>
+            </div>
+        </template>
     </body>
     <script src="index.js" type="module"></script>
 </html>

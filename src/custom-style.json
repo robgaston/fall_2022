@@ -17,15 +17,43 @@
                 "fill-extrusion-color": [
                     "step",
                     ["get", "count"],
-                    "#10D1FF",
-                    50, "#11ACEC",
-                    100, "#1387DA",
-                    300, "#1562C8",
-                    600, "#173DB6",
-                    1000, "#1919A4"
+                    "#feebe2",
+                    50, "#fcc5c0",
+                    100, "#fa9fb5",
+                    200, "#f768a1",
+                    500, "#dd3497",
+                    1000, "#ae017e",
+                    1500, "#7a0177"
                 ],
                 "fill-extrusion-opacity": 0.5,
-                "fill-extrusion-height": ["*", ["get", "count"], 5]
+                "fill-extrusion-height": [
+                    "+",
+                    [
+                        "*",
+                        ["get", "count"],
+                        10
+                    ],
+                    [
+                        "case",
+                        [
+                            "boolean",
+                            ["feature-state", "hover"],
+                            false
+                        ],
+                        1000,
+                        0
+                    ]
+                ],
+                "fill-extrusion-base": [
+                    "case",
+                    [
+                        "boolean",
+                        ["feature-state", "hover"],
+                        false
+                    ],
+                    1000,
+                    0
+                ]
             }
         },
         {
@@ -33,7 +61,16 @@
             "type": "line",
             "source": "neighborhoods",
             "paint": {
-                "line-width": 2,
+                "line-width": [
+                    "case",
+                    [
+                        "boolean",
+                        ["feature-state", "hover"],
+                        false
+                    ],
+                    3,
+                    1
+                ],
                 "line-color": "black"
             }
         }

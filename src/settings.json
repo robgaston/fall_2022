@@ -3,9 +3,10 @@
     "accessToken": "pk.eyJ1Ijoicmdhc3RvbiIsImEiOiJJYTdoRWNJIn0.MN6DrT07IEKXadCU8xpUMg",
     "style": "mapbox://styles/rgaston/cl868zh0l000914s1f3gc039d",
     "center": [
-        -118.217324,
-        33.949514
+        -118.39609268798938,
+        34.03778597599113
     ],
     "zoom": 9.5,
-    "pitch": 40
+    "pitch": 40,
+    "customAttribution": "<a href='http://historicplacesla.org' target='_blank'>Historic Places LA</a> | <a href='https://boundaries.latimes.com/' target='_blank'>LA Times</a>"
 }
